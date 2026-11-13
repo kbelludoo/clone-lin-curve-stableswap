@@ -1,0 +1,17 @@
+This repository is an original LIN implementation of the published
+StableSwap invariant (Egorov, "StableSwap - efficient mechanism for
+Stablecoin liquidity", 2019) as used by Curve 3pool get_D / get_y / get_dy.
+
+It is NOT a copy, fork, or redistribution of curvefi/curve-contract Vyper
+source. That upstream LICENSE grants no redistribution right; auditors
+should fetch the pinned commit from GitHub themselves.
+
+Pinned upstream (hash only):
+  repo:   https://github.com/curvefi/curve-contract
+  path:   contracts/pools/3pool/StableSwap3Pool.vy
+  commit: 574f44027d089de0eac765f5a74ea5ae96aba968
+  blob:   04d170189a1b5ddfecfc0af9ea3fe23eb0840423
+  sha256: 03e0bf29ae2fe945a3629b8085062da8f9d9d25957e86001dfc3df68c895f9dc
+
+Proofs and C11 oracles live in https://github.com/kbelludoo/lin-open
+(examples/curve_stableswap/, test/prove_curve_stableswap_external.py).
